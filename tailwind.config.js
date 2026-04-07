@@ -1,0 +1,125 @@
+module.exports = {
+  darkMode: ["class"],
+  content: ["./src/**/*.{ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: "hsl(340, 60%, 92%)",
+          foreground: "hsl(340, 20%, 25%)",
+        },
+        secondary: {
+          DEFAULT: "hsl(340, 55%, 70%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        tertiary: {
+          DEFAULT: "hsl(340, 30%, 96%)",
+          foreground: "hsl(340, 20%, 25%)",
+        },
+        neutral: {
+          DEFAULT: "hsl(0, 0%, 98%)",
+          foreground: "hsl(210, 10%, 15%)",
+        },
+        background: "hsl(0, 0%, 99%)",
+        foreground: "hsl(340, 20%, 20%)",
+        border: "hsl(340, 20%, 90%)",
+        input: "hsl(340, 20%, 90%)",
+        ring: "hsl(340, 55%, 70%)",
+        card: {
+          DEFAULT: "hsl(0, 0%, 100%)",
+          foreground: "hsl(340, 20%, 20%)",
+        },
+        muted: {
+          DEFAULT: "hsl(340, 20%, 96%)",
+          foreground: "hsl(0, 0%, 40%)",
+        },
+        accent: {
+          DEFAULT: "hsl(340, 55%, 70%)",
+          foreground: "hsl(0, 0%, 100%)",
+        },
+        success: "hsl(145, 45%, 40%)",
+        warning: "hsl(28, 85%, 55%)",
+        gray: {
+          50: "hsl(0, 0%, 98%)",
+          100: "hsl(0, 0%, 95%)",
+          200: "hsl(0, 0%, 90%)",
+          300: "hsl(0, 0%, 80%)",
+          400: "hsl(0, 0%, 65%)",
+          500: "hsl(0, 0%, 50%)",
+          600: "hsl(0, 0%, 40%)",
+          700: "hsl(0, 0%, 30%)",
+          800: "hsl(0, 0%, 20%)",
+          900: "hsl(0, 0%, 10%)",
+        },
+        charcoal: "hsl(340, 15%, 18%)",
+        sand: "hsl(340, 30%, 96%)",
+        sage: "hsl(340, 60%, 92%)",
+        olive: "hsl(340, 55%, 65%)",
+        "olive-dark": "hsl(340, 55%, 50%)",
+        "cloud-white": "hsl(0, 0%, 99%)",
+      },
+      fontFamily: {
+        sans: ['"Figtree"', '"Nunito Sans"', "sans-serif"],
+        headline: ['"Figtree"', "sans-serif"],
+        body: ['"Nunito Sans"', "sans-serif"],
+      },
+      fontSize: {
+        xs: ["0.75rem", { lineHeight: "1.5" }],
+        sm: ["0.875rem", { lineHeight: "1.5" }],
+        base: ["1rem", { lineHeight: "1.5" }],
+        lg: ["1.125rem", { lineHeight: "1.5" }],
+        xl: ["1.25rem", { lineHeight: "1.2" }],
+        "2xl": ["1.5rem", { lineHeight: "1.2" }],
+        "3xl": ["2rem", { lineHeight: "1.2" }],
+        "4xl": ["2.5rem", { lineHeight: "1.2" }],
+        "5xl": ["3rem", { lineHeight: "1.2" }],
+        "6xl": ["3.5rem", { lineHeight: "1.2" }],
+      },
+      letterSpacing: {
+        headline: "-0.025em",
+      },
+      borderRadius: {
+        DEFAULT: "0.5rem",
+        sm: "0.25rem",
+        md: "0.5rem",
+        lg: "0.75rem",
+        xl: "1rem",
+        full: "9999px",
+      },
+      spacing: {
+        4: "1rem",
+        8: "2rem",
+        12: "3rem",
+        16: "4rem",
+        24: "6rem",
+        32: "8rem",
+        48: "12rem",
+        64: "16rem",
+      },
+      backgroundImage: {
+        "gradient-1": "linear-gradient(135deg, hsl(340, 55%, 70%) 0%, hsl(340, 55%, 50%) 100%)",
+        "gradient-2": "linear-gradient(180deg, hsl(340, 30%, 98%) 0%, hsl(340, 60%, 93%) 100%)",
+      },
+      keyframes: {
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(24px)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-in": {
+          "0%": { opacity: "0" },
+          "100%": { opacity: "1" },
+        },
+        "slide-in-right": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        "fade-up": "fade-up 0.6s ease-out forwards",
+        "fade-in": "fade-in 0.4s ease-out forwards",
+        "slide-in-right": "slide-in-right 0.3s ease-out forwards",
+      },
+    },
+  },
+  plugins: [require("tailwindcss-animate")],
+};
